@@ -1,0 +1,146 @@
+.blog {
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    padding-top: 145px;
+    padding-bottom: 145px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blog-info .title{
+    color: var(--color-title3);
+    margin-bottom: 20px;
+}
+
+.blog-info .subtitle {
+    font-size: var(--bigger-fs);
+    margin-bottom: 34px;
+}
+
+.blog-info a {
+    color: white;
+    font-weight: 700;
+    font-size: var(--small-fs);
+    line-height: 18px;
+    transition: all .5s;
+}
+
+.blog-info span {
+    padding-right: 5px;
+}
+
+.blog-info a:hover {
+    color: var(--color-orange);
+}
+
+.blog-posts {
+    color: white;
+}
+
+.blog-post {
+    border-bottom: 2px solid #575757;
+    padding-top: 30px;
+}
+
+.date {
+    font-weight: 700;
+    font-size: var(--smallest-fs);
+    line-height: 16px;
+    color: var(--color-white);
+    display: block;
+    padding-bottom: 26px;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.date:hover {
+    color: var(--color-secondary);
+}
+
+.blog-title {
+    font-weight: 700;
+    font-size: var(--primary-fs);
+    line-height: 36px;
+    color: var(--color-white);
+    padding-bottom: 41px;
+}
+
+.blog-post a{
+    font-weight: 700;
+    font-size: var(--small-fs);
+    line-height: 18px;
+    display: block;
+    margin-bottom: 50px;
+    color: var(--color-white);
+    transition: all .5s;
+}
+
+.blog-post a:hover {
+    color: var(--color-orange);
+}
+
+.blog-post span {
+    padding-right: 5px;
+}
+
+
+
+@media (max-width: 768px) {
+    .blog {
+       grid-template-columns: 1fr;
+       padding-top: 80px;
+       padding-bottom: 80px;
+     }
+    .blog-info {
+       text-align: center;
+     }
+    .blog-posts {
+       flex-direction: column;
+       align-items: center;
+     }
+    .blog-post {
+       margin-bottom: 20px;
+     }
+    .blog-post:last-child {
+       border-bottom: none;
+     }
+    .date {
+       font-size: 14px;
+     }
+    .blog-title {
+       font-size: 24px;
+     }
+    .blog-post a {
+       font-size: 16px;
+     }
+   }
+   
+   @media (max-width: 480px) {
+    .blog {
+       padding-top: 40px;
+       padding-bottom: 40px;
+     }
+    .blog-info {
+       text-align: center;
+     }
+    .blog-posts {
+       flex-direction: column;
+       align-items: center;
+     }
+    .blog-post {
+       margin-bottom: 10px;
+     }
+    .blog-post:last-child {
+       border-bottom: none;
+     }
+    .date {
+       font-size: 12px;
+     }
+    .blog-title {
+       font-size: 18px;
+     }
+    .blog-post a {
+       font-size: 14px;
+     }
+   }

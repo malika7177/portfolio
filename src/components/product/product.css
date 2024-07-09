@@ -1,0 +1,121 @@
+.product {
+    padding-top: 160px;
+}
+
+.product-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.product-info .title {
+    color: var(--color-title1);
+    padding-bottom: 20px;
+}
+
+.product-info .subtitle {
+    font-size: 54px;
+}
+
+.product-description p {
+    font-weight: 400;
+    font-size: var(--secondary-fs);
+    line-height: 40px;
+    color: var(--color-secondary);
+}
+
+.product-gallery {
+    padding-top: 114px;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    gap: 10px;
+}
+
+.product-gallery .grid1 img {
+    width: 338px;
+    height: 626px;
+}
+
+.product-gallery .grid2 img {
+    width: 507px;
+    height: 626px;
+}
+
+.product-gallery .grid3 img {
+    width: 338px;
+    height: 305px;
+    padding-bottom: 25px;
+}
+
+.product-gallery .grid3 img{
+    width: 338px;
+    height: 325px;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .product {
+       padding-top: 80px;
+     }
+    .product-header {
+       grid-template-columns: 1fr;
+     }
+    .product-info .subtitle {
+       font-size: 36px;
+     }
+    .product-description p {
+       font-size: 18px;
+       line-height: 30px;
+     }
+    .product-gallery {
+       grid-template-columns: 1fr;
+       gap: 20px;
+     }
+    .product-gallery .grid1 img {
+       width: 100%;
+       height: auto;
+     }
+    .product-gallery .grid2 img {
+       width: 100%;
+       height: auto;
+     }
+    .product-gallery .grid3 img {
+       width: 100%;
+       height: auto;
+       padding-bottom: 15px;
+     }
+   }
+   
+   @media (max-width: 480px) {
+    .product {
+       padding-top: 40px;
+     }
+    .product-header {
+       grid-template-columns: 1fr;
+     }
+    .product-info .subtitle {
+       font-size: 24px;
+     }
+    .product-description p {
+       font-size: 16px;
+       line-height: 24px;
+     }
+    .product-gallery {
+       grid-template-columns: 1fr;
+       gap: 10px;
+     }
+    .product-gallery .grid1 img {
+       width: 100%;
+       height: auto;
+     }
+    .product-gallery .grid2 img {
+       width: 100%;
+       height: auto;
+     }
+    .product-gallery .grid3 img {
+       width: 100%;
+       height: auto;
+       padding-bottom: 10px;
+     }
+   }

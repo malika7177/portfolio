@@ -1,0 +1,142 @@
+.experience {
+    padding-top: 110px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.experience h2 {
+    font-weight: 400;
+    font-size: var(--big-fs);
+    line-height: 36px;
+    margin-bottom: 80px;
+}
+
+.item {
+    width: 583.19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    border-bottom: 2px solid #ddd;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.university,
+.company {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: var(--normal-fs);
+    line-height: 26.4px;
+}
+
+.degree,
+.position {
+    font-weight: 400;
+    font-size: var(--smaller-fs);
+    line-height: 20.8px;
+    color: var(--color-secondary);
+}
+
+.dates {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20.8px;
+    color: var(--color-secondary);
+}
+
+.bi-arrow-up-right:hover {
+    transition: all .5s;
+    color: var(--color-orange);
+    cursor: pointer;
+}
+
+.bi-rocket-fill,
+.bi-music-note,
+.bi-person-fill {
+    font-size: 25px;
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bi-rocket-fill {
+    color: #D10094;
+    background-color: #ffb4e9;
+}
+
+.bi-music-note {
+    color: #0033B6;
+    background-color: #A5BEFF;
+}
+
+.bi-person-fill {
+    color:#543700;
+    background: #FFC960;
+}
+
+
+@media (max-width: 768px) {
+ .experience {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+ .item {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+ .university,
+ .company {
+    font-size: 18px;
+  }
+ .degree,
+ .position {
+    font-size: 16px;
+  }
+ .dates {
+    font-size: 14px;
+  }
+ .bi-rocket-fill,
+ .bi-music-note,
+ .bi-person-fill {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+ .experience {
+    padding-top: 60px;
+  }
+ .item {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+ .university,
+ .company {
+    font-size: 16px;
+  }
+ .degree,
+ .position {
+    font-size: 14px;
+  }
+ .dates {
+    font-size: 12px;
+  }
+ .bi-rocket-fill,
+ .bi-music-note,
+ .bi-person-fill {
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+  }
+}

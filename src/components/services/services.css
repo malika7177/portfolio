@@ -1,0 +1,106 @@
+.services {
+    width: 100%;
+}
+
+.services .title {
+    color: var(--color-title1);
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.services .subtitle {
+    text-align: center;
+    margin-bottom: 114px;
+}
+
+.services-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 250px;
+}
+
+.services-item img {
+    width: 70px;
+}
+
+.services-item .service-title {
+    margin-bottom: 25px;
+    margin-top: 30px;
+    font-family: var(--roboto);
+    font-size: var(--normal-fs);
+}
+
+.services-item .service-subtitle{
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #666666;
+}
+
+.services-item ul li {
+    padding-bottom: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    list-style-type: square;
+}
+
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .services-container {
+      gap: 200px;
+    }
+    .services-item img {
+      width: 80px;
+    }
+    .services-item .service-title {
+      font-size: 18px;
+    }
+    .services-item .service-subtitle {
+      font-size: 16px;
+    }
+    .services-item ul li {
+      font-size: 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .services-container {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 150px;
+    }
+    .services-item img {
+      width: 60px;
+    }
+    .services-item .service-title {
+      font-size: 16px;
+    }
+    .services-item .service-subtitle {
+      font-size: 14px;
+    }
+    .services-item ul li {
+      font-size: 14px;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .services-container {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 50px;
+    }
+    .services-item img {
+      width: 40px;
+    }
+    .services-item .service-title {
+      font-size: 14px;
+    }
+    .services-item .service-subtitle {
+      font-size: 12px;
+    }
+    .services-item ul li {
+      font-size: 12px;
+    }
+  }

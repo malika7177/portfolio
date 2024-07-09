@@ -1,0 +1,95 @@
+.footer {
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding-top: 200px;
+}
+
+.footer-header .subtitle span {
+    padding-top: 15px;
+    color: var(--color-subtitle);
+}
+
+.footer-content {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-contact a {
+    color: var(--color-white);
+    font-weight: 700;
+    display: block;
+    padding-bottom: 14px;
+    font-size: var(--primary-fs);
+}
+
+.footer-contact .point {
+    color: var(--color-orange);
+}
+
+.footer-contact p {
+    font-weight: 400;
+    font-size: var(--smaller-fs);
+    line-height: 28px;
+    color: var(--color-secondary);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.footer-contact p:hover {
+    color: var(--color-orange);
+}
+
+.footer-contact .email {
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 36px;
+    color: var(--color-subtitle2);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.footer-contact .email:hover {
+    color: var(--color-orange);
+}
+
+.footer-contact .email i {
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+}
+
+.footer-links ul li {
+    padding-bottom: 40px;
+}
+
+.footer-links ul li a {
+    font-weight: 400;
+    font-size: var(--small-fs);
+    line-height: 18px;
+    color: var(--color-white);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.footer-links ul li a:hover {
+    color: var(--color-orange);
+}
+
+.footer-end {
+    color: #8A95AD;
+    font-size: var(--smaller-fs);
+    line-height: 22.4px;
+    font-weight: 400;
+    cursor: pointer ;
+}
